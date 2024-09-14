@@ -1,0 +1,658 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* line-height: 1.5; 
+    -webkit-font-smoothing: antialiased; */
+    /* font-family: ; */
+    /* font-optical-sizing: auto; */
+    /* /* background-color: aqua; */
+}
+
+html {
+    /* font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 0rem; */
+}
+
+::-webkit-scrollbar {
+    /* width: 1rem; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    /* text-wrap: balance; */
+}
+
+input,
+textarea,
+button {
+    /* font-family: inherit; */
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    /* display: block; */
+    /* max-width: 100%; */
+}
+
+:root {}
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+.componentSpacing {
+    padding: 3rem 0;
+}
+
+.minipad {
+    padding: 1rem;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dflex {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dflex-col-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+/* ::::PARENT CONTAINER Code Starts here:::: */
+
+header {
+    /* width: 100%;
+    height: auto; */
+    background-color: #F9FAFC;
+}
+
+main {
+    /* width: 100%;
+    height: auto; */
+}
+
+footer {
+    /* width: 100%;
+    height: auto; */
+}
+
+/* ::::PARENT CONTAINER Code Ends here::::  */
+
+/* -----navBar Code Start here----- */
+.logo img{
+    width: 80px;
+    margin-top: 15px;
+}
+.navLinks{
+    margin-top: 2rem;
+}
+.navLinks li{
+    list-style-type: none;
+    text-indent: 15px;
+    font-family:" Overpass", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #737b9a;
+}
+.navLinks li:hover{
+    color: #00B0C7;
+}
+.navLinks .home{
+    color: #00B0C7;
+}
+
+/* -----CheckBtn code Start here---- */
+.checkbtn{
+    color: #00B0C7;
+    font-size: 25px;
+    display: none;
+    position: absolute;
+    left: 85%;
+    top: 40px;
+}
+#check {
+    display: none;
+}
+/* -----CheckBtn code End here---- */
+
+
+/* -----navBar Code Ends here----- */
+
+
+
+
+/* -----heroSection Code Start here----- */
+.heroSection{
+    margin-top: 8rem;
+}
+.title{
+    margin-top: 4rem;
+}
+.title1 span{
+    font-family:" Overpass", sans-serif ;
+    font-size: 17px;
+    font-weight: 600;
+    color: #00B0C7;
+    letter-spacing: 2px;
+}
+.title1 h1{
+    font-family:" Overpass", sans-serif ;
+    font-size: 59px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+.title1 p{
+    font-family:" Overpass", sans-serif ;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #737b9a;
+    margin-top: 1rem;
+}
+/* -----heroSection Code Ends here----- */
+
+
+/* -----serviceSection Code Start here----- */
+.title2{
+    text-align: center;
+    margin-top: 5rem;
+}
+.title2 span{
+    font-family:" Overpass", sans-serif ;
+    font-size: 17px;
+    font-weight: 600;
+    color: #00B0C7;
+    letter-spacing: 2px;
+}
+.title2 h1{
+    font-family:" Overpass", sans-serif ;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+.title2 p{
+    font-family:" Overpass", sans-serif ;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #737b9a;
+    margin-top: 1rem; 
+    /* padding: 0 10px; */
+}
+
+.card{
+    background-color: #f9f9fc;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.card .cardHeader i{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.cardHeader .fa-ranking-star{
+    color:#FF8A6C;
+}
+.cardHeader .fa-envelope-open-text{
+    color: #FACD60;
+}
+.cardHeader .fa-magnifying-glass-dollar{
+    color:#00B0C7  ;
+}
+.card:hover{
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition:.5s;
+    transform: scale(1.01);
+}
+.cardBody{
+    padding: 2rem;
+}
+.cardBody h3,p{
+    text-align: center;
+}
+.cardBody h3{
+    font-family:" Overpass", sans-serif ;
+    font-size: 20px;
+    font-weight: 400;
+}
+.cardBody p{
+    font-family:" Overpass", sans-serif ;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #737b9a;
+    margin-top: 1rem;
+}
+/* -----serviceSection Code Ends here----- */
+
+
+/* -----FooterSection Code Start here----- */
+.fotContainer{
+    background-color: #212529;
+}
+.fotBody{
+    margin-top: 5rem;
+}
+.overview{
+    margin-top: 3rem;
+}
+.overview h3{
+    font-size: 30px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4E5E6A;
+    color: #fff;
+}
+.overview p{
+    text-align: start;
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+    line-height: 31px;
+    color: #737b9a;
+    margin-top: 3rem;
+}
+.overview img{
+    margin-top: 2rem;
+}
+.quick{
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+.quick h3{
+    font-size: 30px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4E5E6A;
+    color: #fff;
+}
+.links{
+    display: flex;
+    margin-top: 2rem;
+    color: #fff;
+}
+.link1{
+    list-style-type: none;
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+    line-height: 31px;
+}
+.link2{
+    list-style-type: none;
+    margin-left: 5rem;
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+    line-height: 31px;
+}
+.contact{
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+.contact h3{
+    font-size: 30px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #4E5E6A;
+    color: #fff;
+}
+.phone{
+    display: flex;
+    margin-top: 2rem;
+    color: #fff;
+}
+.phone .icon1 i{
+    font-size: 40px;
+    margin-top: 10px;
+    color: #FF8A6C;
+
+}
+.number span{
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+}
+.number{
+    margin-left: 1rem;
+}
+.number h4{
+    font-size: 20px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.number h4:hover{
+    color:#FF8A6C ;
+}
+.gmail{
+    display: flex;
+}
+.gmail .icon2 i{
+    font-size: 30px;
+    font-size: 40px;
+    margin-top: 10px;
+    color: #FF8A6C;
+}
+.gmail{
+    margin-top: 2rem;
+}
+.mail{
+    margin-left: 1rem;
+    color: #fff;
+}
+.mail span{
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+}
+.mail h4{
+    font-size: 20px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.mail h4:hover{
+    color: #FF8A6C;
+}
+.social{
+    display: flex;
+    color: #fff;
+}
+.social .icon3 i{
+    font-size: 40px;
+    margin-top: 10px;
+    color: #FF8A6C;
+}
+.social{
+    margin-top: 2rem;
+}
+.network{
+    margin-left: 1rem;
+}
+.network span{
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+}
+.network i{
+    font-size: 22px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.network i:hover{
+    color: #FF8A6C;
+}
+.fotBody{
+    border-bottom: 1px solid #4E5E6A;
+    padding-bottom: 2rem;
+}
+
+.copyrightBody{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+.copy{
+    display: flex;
+}
+.copy p{
+    color: #fff;
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+    margin-left: 7.5rem;
+}
+.copy a{
+    margin-left: 10px;
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+    color:#00B0C7 ;
+}
+.copy a:hover{
+    color: #FF8A6C;
+}
+.condition p{
+    color: #fff;
+    font-size: 16px;
+    font-family:" Overpass", sans-serif ;
+    font-weight: 400;
+    margin-left: 80px;
+}
+.condition span{
+    padding: 0 20px;
+}
+/* -----FooterSection Code Ends here----- */
+
+
+
+/* ::::RESPONSIVE DESIGN DEVICE SIZES:::: */
+
+/* for responsive Target the Row Code (display:grid) */
+
+/* Small devices (landscape phones , upto 576px an below) */
+@media(width<=576px){
+
+    .grid1,
+    .grid2,
+    .grid3,
+    .grid4{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .navBarBody{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .heroSecBody{
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+     .align {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 3rem;
+    }
+
+
+
+    /* -----navBar Code Start here----- */
+    .navBarSection{
+        padding: 20px;
+    }
+     .navLinks{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        top: 80px;
+        background-color: #fff;
+        height: 250px;
+        width: 90%;
+        line-height: 2rem;
+     }
+     .navLinks li:hover{
+        color: #00B0C7;
+     }
+     .checkbtn{
+        display: block;
+     }
+     #check:checked ~.navLinks{
+        display: flex;
+     }
+     /* -----navBar Code End here----- */
+
+
+
+
+     /* -----heroeSection Code Start here----- */
+     .heroSection{
+        margin-top:1rem;
+        padding: 20px;
+     }
+     .title1 span{
+        font-size: 15px;
+        letter-spacing: 0px;
+        margin: 0 0 0 3rem;
+     }
+     .title1 h1{
+        font-size: 23px;
+        text-align: center;
+     }
+     .title1 p{
+        text-align:center;
+        width: 100%;
+     }
+     .heroImg img{
+        width: 100%;
+        padding-right: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 20px;
+     }
+     .serviceSection{
+        padding: 0;
+     } 
+     .title2 h1{
+        font-size: 23px;
+     }
+     .card {
+        margin-left: 0px;
+        margin: 10px 20px;
+     }
+     /* -----heroSection Code Ends here----- */
+
+
+      /* -----serviceSection Code Start here----- */
+      .serviceSection .title2{
+        padding: 0 20px;
+      }
+
+
+       /* -----serviceSection Code Ends here----- */
+
+
+
+     /* -----FooterSection Code Start here----- */
+     .quick{
+        margin-left: 0;
+     }
+     .contact{
+        margin-left: 0;
+     }
+     .phone .icon1 i{
+        font-size: 20px;
+     }
+     .number h4{
+        font-size: 15px;
+     }
+     .gmail .icon2 i{
+        font-size: 20px;
+     }
+     .mail h4{
+        font-size: 15px;
+     }
+     .social .icon3 i{
+        font-size: 20px;
+     }
+     .network i{
+        font-size: 1rem;
+     }
+     .copyrightBody{
+        margin-top: 1rem;
+     }
+     .copy{
+        /* display: flex; */
+        flex-direction: column;
+    }
+     .copy p{
+        font-size: 15px;
+        margin-left: 0;
+        line-height: 25px;
+     }
+     .copy a{
+        /* margin-left: 3rem; */
+        text-align: center;
+     }
+     .condition p{
+        margin-left: 0;
+        padding: 10px 10px;
+        font-size: 15px;
+     }
+     .condition span{
+        padding: 5px;
+     }
+     .condition p:hover{
+        color: #FF8A6C;
+     }
+     .fotSection{
+        padding: 0 20px;
+     }
+     /* -----FooterSection Code Ends here----- */
+}
+
+/* Medium  devices ( tablets, upto 788px and above */
+/* @media(width >=577px) and (width <=768px){} */
+
+/* Large devices (Laptops, upto 992px and above */
+/* @media(width >=769px) and (width <=992px){} */
+
+/* X-Large devices (large desktops, upto 1200px and above */
+/* @media(width >=993px) and (width <=1200px){} */
+
+/* X-Large devices (large desktops, upto 1200px and above */
+/* @media(width >=1200px){} */
+
